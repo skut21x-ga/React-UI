@@ -1,13 +1,16 @@
 import React from "react";
 import Cocktails from "./Cocktails";
+import SingleDrink from "./SingleDrink";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Cocktails></Cocktails>
-      </header>
+      <Cocktails className="Cocktail"></Cocktails>
+      <div>
+        <a>MODULAR COMPONENT :</a>
+      </div>
+      <SingleDrink className="SingleDrink"></SingleDrink>
     </div>
   );
 }

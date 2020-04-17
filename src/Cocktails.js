@@ -24,7 +24,9 @@ class Cocktails extends Component {
           <div className="DrinkBox" key={drinks.idDrink}>
             <a href={`drink/${drinks.idDrink}`}>
               <div className="NameBox">
-                <h3 className="CocktailName">{drinks.strDrink}</h3>
+                <h3 className="CocktailName">
+                  <a className="DrinkText">{drinks.strDrink}</a>
+                </h3>
               </div>
               <div className="ImageBox">
                 <img className="CocktailImage" src={drinks.strDrinkThumb}></img>

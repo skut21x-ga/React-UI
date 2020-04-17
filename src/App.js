@@ -6,10 +6,10 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <Cocktails className="Cocktail"></Cocktails>
+      {/* <Cocktails className="Cocktail"></Cocktails>
       <div>
         <a>MODULAR COMPONENT :</a>
-      </div>
+      </div> */}
       <SingleDrink className="SingleDrink"></SingleDrink>
     </div>
   );

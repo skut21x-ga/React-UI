@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Cocktails.css";
+import SingleDrink from "./SingleDrink";
 
 let url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?f=a";
 // api docs @ https://www.thecocktaildb.com/api.php?ref=apilist.fun //
@@ -7,36 +8,69 @@ let url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?f=a";
 class Cocktails extends Component {
   constructor(props) {
     super(props);
-    this.state = { drinks: [null] };
+    this.state = {
+      drinks: [null],
+      selectedDrinkID: null,
+    };
   }
 
   componentDidMount() {
     fetch(url, {})
       .then((res) => res.json())
-      .then((res) => this.setState({ drinks: res.drinks }));
+      .then(
+        (res) => this.setState({ drinks: res.drinks })
+        // console.log(this.state.drinks)
+      );
+  }
+
+  updateDrinkID(uniqueID) {
+    // console.log(uniqueID);
+    this.setState({
+      selectedDrinkID: uniqueID,
+    });
   }
 
   render() {
-    console.log(this.state.drinks);
+    const { selectedDrinkID } = this.state;
     let alldrinks = this.state.drinks.map((drinks) => {
       if (drinks != null) {
         return (
-          <div className="DrinkBox" key={drinks.idDrink}>
-            <a href={`drink/${drinks.idDrink}`}>
-              <div className="NameBox">
-                <h3 className="CocktailName">
-                  <a className="DrinkText">{drinks.strDrink}</a>
-                </h3>
-              </div>
-              <div className="ImageBox">
-                <img className="CocktailImage" src={drinks.strDrinkThumb}></img>
-              </div>
-            </a>
+          <div className="drinkBox" key={drinks.idDrink}>
+            <div className="nameBox">
+              <h3 className="cocktailName">
+                <a className="drinkText">{drinks.strDrink}</a>
+              </h3>
+            </div>
+            <div className="imageBox">
+              <img
+                className="cocktailImage"
+                src={drinks.strDrinkThumb}
+                onClick={() => this.updateDrinkID(drinks.idDrink)}
+              ></img>
+            </div>
           </div>
         );
       }
     });
-    return <div className="allDrinks">{alldrinks}</div>;
+    return (
+      <div className="containerOfDrinks">
+        <div className="moduleFloater"> </div>
+        {this.state.selectedDrinkID != null && (
+          <SingleDrink drinkID={selectedDrinkID}></SingleDrink>
+        )}
+        {this.state.selectedDrinkID != null && (
+          <div className="closeButton" onClick={() => this.updateDrinkID(null)}>
+            <h3
+              className="closeButtonText"
+              onClick={() => this.updateDrinkID(null)}
+            >
+              X
+            </h3>
+          </div>
+        )}
+        <div className="allDrinks">{alldrinks}</div>
+      </div>
+    );
   }
 }
 

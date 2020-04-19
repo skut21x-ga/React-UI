@@ -9,41 +9,41 @@
   text-decoration: none;
 }
 
-.DrinkBox {
+.drinkBox {
   color: white;
   border-radius: 0;
   height: 140x;
   margin: 20px 30px 30px 20px;
 }
 
-.NameBox {
+.nameBox {
   background-color: rgba(0, 0, 0, 0.315);
-  opacity: 0.7;
+  opacity: 0.75;
   align-items: center;
   display: flex;
   justify-content: center;
 }
 
-.CocktailName {
+.cocktailName {
   background-color: black;
   color: white;
-  font-size: 8px;
+  font-size: 10px;
   width: 127px;
   height: 17px;
   padding: 3px 3px 3px 3px;
-  margin-bottom: -200px;
+  margin-bottom: -175px;
   text-decoration: none;
   margin-left: -4px;
   justify-content: center;
 }
 
-.DrinkText {
+.drinkText {
   text-decoration: none;
   text-emphasis: none;
   line-height: 18px;
 }
 
-.ImageBox {
+.imageBox {
   height: 125px;
   width: 125px;
   box-shadow: 5px 5px 2px 1px black;
@@ -53,10 +53,30 @@
   justify-content: center;
 }
 
-.CocktailImage {
+.cocktailImage {
   color: white;
   height: 132px;
   box-shadow: 0px 0px 5px 2px rgb(0, 0, 0);
   width: 132px;
   align-items: center;
+}
+
+.closeButton {
+  position: fixed;
+  margin-left: 105px;
+  margin-top: 90px;
+  padding: 2px;
+  color: black;
+  z-index: 10;
+  background-color: white;
+  line-height: 0.1px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid black;
+  box-shadow: 0px 0px 1px 1px black;
+}
+
+.closeButtonText {
+  margin-top: 13px;
 }

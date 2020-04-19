@@ -12,7 +12,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ##### Click the (X) in the top left corner of the modal to close it
 
+#
+
 #### Screenshot:
+
+![Page Screenshot](https://github.com/skut21x-ga/react-ui-pattern-lab/blob/master/src/screenshot.png?raw=true)
+
+#
 
 #### Resources:
 

@@ -21,26 +21,29 @@ class SingleDrink extends Component {
       .catch((err) => console.log(err));
   }
 
-  clearDrinkID() {
-    this.setState({
-      selectedDrinkID: null,
-    });
-  }
-
   render() {
     let singleoverlay = this.state.singledrinks.map((drink) => {
       if (drink != null) {
         return (
           <div className="modularComponent">
             <div className="singleDrinkBox" key={drink.idDrink}>
-              {/*  <div className="closeButton" onClick={() => this.clearDrinkID()}>
-                <h3
-                  className="closeButtonText"
-                  onClick={() => this.clearDrinkID()}
+              {
+                <div
+                  className="closeButton"
+                  onClick={() => {
+                    this.props.clearDrinkID(null);
+                  }}
                 >
-                  X
-                </h3>
-              </div> */}
+                  <h3
+                    className="closeButtonText"
+                    onClick={() => {
+                      this.props.clearDrinkID(null);
+                    }}
+                  >
+                    X
+                  </h3>
+                </div>
+              }
               <div className="singleImageBox">
                 <img
                   className="singleCocktailImage"

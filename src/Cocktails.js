@@ -12,6 +12,7 @@ class Cocktails extends Component {
       drinks: [null],
       selectedDrinkID: null,
     };
+    this.clearDrinkID = this.clearDrinkID.bind(this);
   }
 
   componentDidMount() {
@@ -21,6 +22,12 @@ class Cocktails extends Component {
         (res) => this.setState({ drinks: res.drinks })
         // console.log(this.state.drinks)
       );
+  }
+
+  clearDrinkID() {
+    this.setState({
+      selectedDrinkID: null,
+    });
   }
 
   updateDrinkID(uniqueID) {
@@ -56,9 +63,12 @@ class Cocktails extends Component {
       <div className="containerOfDrinks">
         <div className="moduleFloater"> </div>
         {this.state.selectedDrinkID != null && (
-          <SingleDrink drinkID={selectedDrinkID}></SingleDrink>
+          <SingleDrink
+            drinkID={selectedDrinkID}
+            clearDrinkID={this.clearDrinkID}
+          ></SingleDrink>
         )}
-        {this.state.selectedDrinkID != null && (
+        {/*    {this.state.selectedDrinkID != null && (
           <div className="closeButton" onClick={() => this.updateDrinkID(null)}>
             <h3
               className="closeButtonText"
@@ -67,7 +77,7 @@ class Cocktails extends Component {
               X
             </h3>
           </div>
-        )}
+        )} */}
         <div className="allDrinks">{alldrinks}</div>
       </div>
     );

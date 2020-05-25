@@ -62,22 +62,7 @@ class Cocktails extends Component {
     return (
       <div className="containerOfDrinks">
         <div className="moduleFloater"> </div>
-        {this.state.selectedDrinkID != null && (
-          <SingleDrink
-            drinkID={selectedDrinkID}
-            clearDrinkID={this.clearDrinkID}
-          ></SingleDrink>
-        )}
-        {/*    {this.state.selectedDrinkID != null && (
-          <div className="closeButton" onClick={() => this.updateDrinkID(null)}>
-            <h3
-              className="closeButtonText"
-              onClick={() => this.updateDrinkID(null)}
-            >
-              X
-            </h3>
-          </div>
-        )} */}
+
         <div className="allDrinks">{alldrinks}</div>
       </div>
     );

@@ -62,7 +62,12 @@ class Cocktails extends Component {
     return (
       <div className="containerOfDrinks">
         <div className="moduleFloater"> </div>
-
+        {this.state.selectedDrinkID != null && (
+          <SingleDrink
+            drinkID={selectedDrinkID}
+            clearDrinkID={this.clearDrinkID}
+          ></SingleDrink>
+        )}
         <div className="allDrinks">{alldrinks}</div>
       </div>
     );

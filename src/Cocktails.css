@@ -17,8 +17,8 @@
 }
 
 .nameBox {
-  background-color: rgba(0, 0, 0, 0.315);
-  opacity: 0.75;
+  background-color: black;
+  opacity: 0.9;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -31,7 +31,7 @@
   width: 127px;
   height: 17px;
   padding: 3px 3px 3px 3px;
-  margin-bottom: -175px;
+  margin-bottom: -225px;
   text-decoration: none;
   margin-left: -4px;
   justify-content: center;

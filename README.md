@@ -1,4 +1,4 @@
-## Alcoholic Beverage API Lab
+## Beverage API Project
 
 #### by [Scott Kutler](scott.kutler@gmail.com)
 

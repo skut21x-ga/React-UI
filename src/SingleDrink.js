@@ -64,29 +64,26 @@ class SingleDrink extends Component {
                   <h3 className="singleCocktailMeasurements">
                     Measurements:
                     <div className="measurements">
-                      {drink.strMeasure1} {drink.strIngredient1}
-                      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                      {drink.strMeasure2} {drink.strIngredient2}
-                      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                      {drink.strMeasure3} {drink.strIngredient3} <br></br>
+                      {" "}
+                      {drink.strMeasure1} {drink.strIngredient1}{" "}
+                      &nbsp;&nbsp;&nbsp;&nbsp;
+                      {drink.strMeasure2} {drink.strIngredient2} <p></p>
+                      {drink.strMeasure3} {drink.strIngredient3}
+                      &nbsp;&nbsp;&nbsp;&nbsp;
                       {drink.strMeasure4} {drink.strIngredient4}
-                      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                      {drink.strMeasure5} {drink.strIngredient5}
-                      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                      <p></p> {drink.strMeasure5} {drink.strIngredient5}
+                      &nbsp;&nbsp;&nbsp;&nbsp;
                       {drink.strMeasure6} {drink.strIngredient6}
-                      <br></br>
-                      {drink.strMeasure7} {drink.strIngredient7}
-                      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                      <p></p> {drink.strMeasure7} {drink.strIngredient7}
+                      &nbsp;&nbsp;&nbsp;&nbsp;
                       {drink.strMeasure8} {drink.strIngredient8}
-                      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                      {drink.strMeasure9} {drink.strIngredient9}
-                      <br></br>
+                      <p></p> {drink.strMeasure9} {drink.strIngredient9}
+                      &nbsp;&nbsp;&nbsp;&nbsp;
                       {drink.strMeasure10} {drink.strIngredient10}
-                      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                      {drink.strMeasure11} {drink.strIngredient11}
-                      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                      <p></p> {drink.strMeasure11} {drink.strIngredient11}
+                      &nbsp;&nbsp;&nbsp;&nbsp;
                       {drink.strMeasure12} {drink.strIngredient12}
-                      <br></br>
+                      <p></p>
                     </div>
                   </h3>
                 </div>

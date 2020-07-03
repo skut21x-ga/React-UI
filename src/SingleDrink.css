@@ -37,6 +37,7 @@
   width: 250px;
   align-items: center;
   border: 2px solid black;
+  z-index: 10;
 }
 
 .singleAllDrinks {
@@ -74,6 +75,7 @@
   margin-bottom: -300px;
   text-align: left;
   line-height: 3px;
+  margin-top: 20px;
 }
 
 .singleCocktailName {
@@ -88,7 +90,7 @@
 }
 
 .singleCocktailInstructions {
-  font-size: 12.5px;
+  font-size: 9px;
   line-height: 15px;
   font-style: oblique;
   width: 325px;
@@ -108,7 +110,7 @@
 
 .measurements {
   font-size: 10px;
-  line-height: 25px;
+  line-height: 12px;
 }
 
 .closeButton {
@@ -121,14 +123,14 @@
   background-color: white;
   line-height: 0.1px;
   width: 25px;
-  height: 25px;
+  height: 23px;
   border-radius: 50%;
   border: 2px solid black;
   box-shadow: 0px 0px 1px 1px black;
 }
 
 .closeButtonText {
-  margin-top: 13px;
+  margin-top: 12px;
 }
 
 @media only screen and (max-width: 700px) {
@@ -136,7 +138,7 @@
     flex-direction: column;
     width: 280px;
     display: flex;
-    height: 500px;
+    height: 525px;
     background-color: rgb(255, 240, 240);
     border: 2px solid black;
   }
@@ -157,13 +159,13 @@
     width: 90%;
     margin-left: 15px;
     margin-top: 2px;
-    font-size: 11px;
+    font-size: 10px;
   }
 
   .singleDrinkInformation {
     text-align: center;
     margin-left: 2%;
-    margin-top: 2px;
+    margin-top: -25px;
     width: 260px;
     margin-right: 100px;
   }
@@ -173,15 +175,45 @@
   }
 
   .measurements {
-    width: 250px;
+    width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 9px;
     line-height: 20px;
+    margin-left: 25px;
+    flex-wrap: wrap;
   }
 
   .modularComponentBackground {
     margin-top: 45vh;
   }
+
+  .singleCocktailMeasurements {
+    margin-top: -5px;
+    width: 100%;
+  }
 }
+
+/* @media not all and (min-resolution: 0.001dpcm) and (max-width: 700px) { */
+/* .singleDrinkInformation { */
+/* text-align: center; */
+/* font-family: Futura; */
+/* margin-left: 2%; */
+/* margin-top: -120px; */
+/* width: 265px; */
+/* margin-right: 100px; */
+/* } */
+/*  */
+/* .measurements { */
+/* width: 220px; */
+/* display: flex; */
+/* margin-left: 0px; */
+/* justify-content: center; */
+/* align-items: center; */
+/* font-size: 9px; */
+/* line-height: 20px; */
+/* flex-wrap: wrap; */
+/* flex-direction: row; */
+/* } */
+/* } */

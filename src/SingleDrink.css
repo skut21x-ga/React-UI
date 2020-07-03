@@ -1,6 +1,6 @@
 .modularComponentBackground {
   background-color: rgba(36, 36, 36, 0.507);
-  height: 100vh;
+  height: 110vh;
   width: 100vw;
   z-index: 4;
   display: flex;
@@ -22,6 +22,14 @@
   z-index: 5;
 }
 
+@-moz-document url-prefix() {
+  .modularComponentBackground {
+    height: 150vh;
+  }
+  .modularComponent {
+    margin-top: 300px;
+  }
+}
 .singleImageBox {
   height: 250px;
   width: 250px;
@@ -127,10 +135,12 @@
   border-radius: 50%;
   border: 2px solid black;
   box-shadow: 0px 0px 1px 1px black;
+  z-index: 1000;
 }
 
 .closeButtonText {
   margin-top: 12px;
+  z-index: 1000;
 }
 
 @media only screen and (max-width: 700px) {
@@ -186,7 +196,7 @@
   }
 
   .modularComponentBackground {
-    margin-top: 45vh;
+    margin-top: 70%;
   }
 
   .singleCocktailMeasurements {
@@ -218,4 +228,19 @@
       flex-direction: row;
     }
   }
+}
+
+@-moz-document url-prefix() {
+  @media only screen and (max-width: 700px) {
+    .modularComponent {
+      margin-top: 500px;
+    }
+    .modularComponentBackground {
+      height: 200%;
+    }
+  }
+}
+
+html {
+  background-color: rgb(41, 41, 41);
 }

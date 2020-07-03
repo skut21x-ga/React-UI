@@ -195,25 +195,27 @@
   }
 }
 
-/* @media not all and (min-resolution: 0.001dpcm) and (max-width: 700px) { */
-/* .singleDrinkInformation { */
-/* text-align: center; */
-/* font-family: Futura; */
-/* margin-left: 2%; */
-/* margin-top: -120px; */
-/* width: 265px; */
-/* margin-right: 100px; */
-/* } */
-/*  */
-/* .measurements { */
-/* width: 220px; */
-/* display: flex; */
-/* margin-left: 0px; */
-/* justify-content: center; */
-/* align-items: center; */
-/* font-size: 9px; */
-/* line-height: 20px; */
-/* flex-wrap: wrap; */
-/* flex-direction: row; */
-/* } */
-/* } */
+@media not all and (min-resolution: 0.001dpcm) {
+  @media only screen and (max-width: 700px) {
+    .singleDrinkInformation {
+      text-align: center;
+      font-family: Futura;
+      margin-left: 2%;
+      margin-top: -120px;
+      width: 265px;
+      margin-right: 100px;
+    }
+
+    .measurements {
+      width: 220px;
+      display: flex;
+      margin-left: 0px;
+      justify-content: center;
+      align-items: center;
+      font-size: 9px;
+      line-height: 20px;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+  }
+}

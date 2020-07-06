@@ -148,9 +148,8 @@
     flex-direction: column;
     width: 283px;
     display: flex;
-    height: 525px;
+    height: 550px;
     background-color: rgb(255, 240, 240);
-    border: 2px solid black;
   }
 
   .singleDrinkBox {
@@ -158,7 +157,25 @@
   }
 
   .singleImageBox {
-    margin-left: -1.5%;
+    height: 250px;
+    width: 250px;
+    /* background-color: rgb(82, 82, 82); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .singleCocktailImage {
+    color: white;
+    height: 275px;
+    width: 283px;
+    align-items: center;
+    margin-top: -12.5px;
+    margin-left: -7px;
+    border: 2px solid black;
+    z-index: 10;
+    border: 0px;
+    border-bottom: 4px solid black;
   }
 
   .drinkDetails {
@@ -244,10 +261,14 @@
 @-moz-document url-prefix() {
   @media only screen and (max-width: 700px) {
     .modularComponent {
-      margin-top: 500px;
+      margin-top: 300px;
     }
     .modularComponentBackground {
       height: 200%;
+    }
+    .singleCocktailImage {
+      margin-left: -7px;
+      border: 5px solid black;
     }
   }
 }

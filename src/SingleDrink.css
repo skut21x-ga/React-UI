@@ -148,7 +148,7 @@
     flex-direction: column;
     width: 283px;
     display: flex;
-    height: 600px;
+    height: 525px;
     background-color: rgb(255, 240, 240);
     border: 2px solid black;
   }
@@ -170,12 +170,23 @@
     margin-left: 15px;
     margin-top: 2px;
     font-size: 10px;
+    height: 100px;
+  }
+
+  .singleCocktailInstructionsBox {
+    min-height: 50px;
+    max-height: 200px;
+    height: 50px;
+    text-overflow: scroll;
+    overflow: scroll;
+    margin-top: 0px;
+    margin-bottom: 15px;
   }
 
   .singleDrinkInformation {
     text-align: center;
     margin-left: 2%;
-    margin-top: -25px;
+    margin-top: 0px;
     width: 260px;
     margin-right: 100px;
   }

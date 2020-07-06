@@ -58,9 +58,11 @@ class SingleDrink extends Component {
                   <h3 className="singleCocktailServedIn">
                     Served in a {drink.strGlass}
                   </h3>{" "}
-                  <h3 className="singleCocktailInstructions">
-                    Special Instructions: {drink.strInstructions}
-                  </h3>
+                  <div className="singleCocktailInstructionsBox">
+                    <h3 className="singleCocktailInstructions">
+                      Special Instructions: {drink.strInstructions}
+                    </h3>
+                  </div>
                   <h3 className="singleCocktailMeasurements">
                     Measurements:
                     <div className="measurements">
